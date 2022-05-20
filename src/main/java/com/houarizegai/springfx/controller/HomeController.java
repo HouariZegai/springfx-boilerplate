@@ -16,7 +16,7 @@ public class HomeController {
     private final Logger logger = LoggerFactory.getLogger(HomeController.class.getName());
 
     @FXML
-    public void onAdd() {
+    public void saveUser() {
         var user = new User(1, "Houari", 100d);
         userRepository.save(user);
         logger.info("User added to database");
